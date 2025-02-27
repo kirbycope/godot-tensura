@@ -35,7 +35,7 @@ shadow_enabled = true
 environment = SubResource("Environment_vngui")
 
 [node name="Camera3D" type="Camera3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 6)
+transform = Transform3D(1, 0, -1.74846e-07, 0, 1, 0, 1.74846e-07, 0, 1, 0, 1, 5)
 
 [node name="Ball" parent="." instance=ExtResource("1_ct2ii")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.44676, 0)

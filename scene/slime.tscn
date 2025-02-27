@@ -184,6 +184,7 @@ transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0, 0, 
 
 [node name="Sphere" type="MeshInstance3D" parent="Visuals"]
 transform = Transform3D(0.00251844, -0.000471435, 0.999997, 0.000861194, 1, 0.000469267, -0.999997, 0.000860009, 0.00251885, 0, 0.7, 0)
+visible = false
 mesh = ExtResource("2_5hydt")
 skeleton = NodePath("")
 
@@ -228,9 +229,10 @@ transform = Transform3D(-1, 8.74228e-08, 0, -8.74228e-08, -1, 0, 0, 0, 1, -5.341
 mesh = ExtResource("2_5hydt")
 skeleton = NodePath("../..")
 parent_collision_ignore = NodePath("../../../../..")
+total_mass = 10.01
 linear_stiffness = 1.0
 pressure_coefficient = 100.0
 pinned_points = [5610]
 attachments/0/point_index = 5610
 attachments/0/spatial_attachment_path = NodePath("..")
-attachments/0/offset = Vector3(-5.34185e-08, 0.611036, 0)
+attachments/0/offset = Vector3(-5.34185e-08, 0.611036, -2.01948e-28)
