@@ -1,9 +1,9 @@
 [gd_scene load_steps=18 format=4 uid="uid://uilkjv204jvm"]
 
-[ext_resource type="Script" path="res://scene/slime.gd" id="1_dde8h"]
-[ext_resource type="Texture2D" uid="uid://ouna08gem3n" path="res://assets/textures/slime_base_1.png" id="1_ed21u"]
-[ext_resource type="ArrayMesh" uid="uid://4v3usc4nr0jj" path="res://assets/slime_sphere.tres" id="2_5hydt"]
-[ext_resource type="Texture2D" uid="uid://b83ufoib38jxm" path="res://assets/textures/pepa.png" id="2_hksnv"]
+[ext_resource type="Script" uid="uid://i21na2j15lbj" path="res://scene/slime.gd" id="1_dde8h"]
+[ext_resource type="Texture2D" uid="uid://ouna08gem3n" path="res://assets/slime/textures/slime_base_1.png" id="1_ed21u"]
+[ext_resource type="ArrayMesh" uid="uid://4v3usc4nr0jj" path="res://assets/slime/slime_sphere.tres" id="2_5hydt"]
+[ext_resource type="Texture2D" uid="uid://b83ufoib38jxm" path="res://assets/slime/textures/pepa.png" id="2_hksnv"]
 
 [sub_resource type="SphereShape3D" id="SphereShape3D_iphvr"]
 radius = 0.8
@@ -194,7 +194,7 @@ mesh = SubResource("ArrayMesh_gb2o4")
 skeleton = NodePath("")
 
 [node name="Sphere_002" type="MeshInstance3D" parent="Visuals"]
-transform = Transform3D(0.0697843, 0.000535827, 0.59198, 0.0355775, -0.249351, -0.000738087, 0.852996, 0.0103563, -0.0483997, -0.0948163, 0.500292, -2.08724)
+transform = Transform3D(0.0697843, 0.000535826, 0.59198, 0.0355774, -0.249351, -0.000738083, 0.852996, 0.0103563, -0.0483996, -0.0948163, 0.500292, -2.08724)
 mesh = SubResource("ArrayMesh_bfmjr")
 skeleton = NodePath("")
 
