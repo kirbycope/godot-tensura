@@ -1,0 +1,51 @@
+[gd_scene load_steps=8 format=3 uid="uid://dp7112amno4f0"]
+
+[ext_resource type="PackedScene" uid="uid://uilkjv204jvm" path="res://scene/slime.tscn" id="1_4s82c"]
+
+[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_muql8"]
+sky_horizon_color = Color(0.64625, 0.65575, 0.67075, 1)
+ground_horizon_color = Color(0.64625, 0.65575, 0.67075, 1)
+
+[sub_resource type="Sky" id="Sky_mdq02"]
+sky_material = SubResource("ProceduralSkyMaterial_muql8")
+
+[sub_resource type="Environment" id="Environment_vngui"]
+background_mode = 2
+sky = SubResource("Sky_mdq02")
+tonemap_mode = 2
+glow_enabled = true
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_bfcfm"]
+size = Vector3(10, 1, 10)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_tkkoe"]
+albedo_color = Color(0.239216, 0.239216, 0.239216, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_4td7l"]
+material = SubResource("StandardMaterial3D_tkkoe")
+size = Vector3(10, 1, 10)
+
+[node name="Main" type="Node3D"]
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(-0.866025, -0.433013, 0.25, 0, 0.5, 0.866025, -0.5, 0.75, -0.433013, 0, 0, 0)
+shadow_enabled = true
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_vngui")
+
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 3)
+
+[node name="Slime" parent="." instance=ExtResource("1_4s82c")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.0198414, 0)
+
+[node name="StaticBody3D" type="StaticBody3D" parent="."]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.5, 0)
+shape = SubResource("BoxShape3D_bfcfm")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="StaticBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.5, 0)
+mesh = SubResource("BoxMesh_4td7l")
