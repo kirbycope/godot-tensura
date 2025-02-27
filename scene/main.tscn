@@ -1,6 +1,6 @@
 [gd_scene load_steps=8 format=3 uid="uid://dp7112amno4f0"]
 
-[ext_resource type="PackedScene" uid="uid://uilkjv204jvm" path="res://scene/slime.tscn" id="1_4s82c"]
+[ext_resource type="PackedScene" uid="uid://u2h1dx4i3tcs" path="res://scene/ball.tscn" id="1_ct2ii"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_muql8"]
 sky_horizon_color = Color(0.64625, 0.65575, 0.67075, 1)
@@ -35,10 +35,10 @@ shadow_enabled = true
 environment = SubResource("Environment_vngui")
 
 [node name="Camera3D" type="Camera3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 3)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 6)
 
-[node name="Slime" parent="." instance=ExtResource("1_4s82c")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.0198414, 0)
+[node name="Ball" parent="." instance=ExtResource("1_ct2ii")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.44676, 0)
 
 [node name="StaticBody3D" type="StaticBody3D" parent="."]
 
