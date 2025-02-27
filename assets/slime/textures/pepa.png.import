@@ -4,15 +4,16 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://b83ufoib38jxm"
 path.s3tc="res://.godot/imported/pepa.png-2f4c1f59a1ae8d760b3942f6a9089e3c.s3tc.ctex"
+path.etc2="res://.godot/imported/pepa.png-2f4c1f59a1ae8d760b3942f6a9089e3c.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://assets/slime/textures/pepa.png"
-dest_files=["res://.godot/imported/pepa.png-2f4c1f59a1ae8d760b3942f6a9089e3c.s3tc.ctex"]
+dest_files=["res://.godot/imported/pepa.png-2f4c1f59a1ae8d760b3942f6a9089e3c.s3tc.ctex", "res://.godot/imported/pepa.png-2f4c1f59a1ae8d760b3942f6a9089e3c.etc2.ctex"]
 
 [params]
 
