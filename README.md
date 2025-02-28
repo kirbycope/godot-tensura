@@ -1,7 +1,7 @@
 ![Thumbnail](/ci/thumbnail.png)
 
 # godot-tensura
-That Time I Got Reincarnated as a Slime (2018) in the Godot Engine.
+That Time I Got Reincarnated as a Slime (2018) in the Godot game engine.
 
 <details>
 <summary>Using Addons</summary>
