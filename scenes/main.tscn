@@ -18,7 +18,7 @@ tonemap_mode = 2
 glow_enabled = true
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_bfcfm"]
-size = Vector3(10, 1, 10)
+size = Vector3(24, 1, 10)
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_tkkoe"]
 albedo_color = Color(0.45629, 0.287395, 0.0402074, 1)
